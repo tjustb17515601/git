@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05-1</title>
+<!-- <link rel="stylesheet" href="././css/my.css"> -->
+<link rel="stylesheet" href="../css/style.css">
+<style>
+    /* 标签选择器 */
+    body {
+        background-color: coral;
+        text-align: center;
+    }
+    p {
+        /* color: crimson; */
+    }
+    .one {
+        font-family: "宋体";
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(130, 238, 206);
+    }
+
+    /* id选择器只能用一次 */
+    #two {
+
+    }
+
+    a[id] {
+        text-decoration: none;
+    }
+    /* 伪类和伪元素 经过得时候得样式 */
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+
+    }
+
+    div em {
+        /* color: royalblue; */
+    }
+    /* 子元素 后代选择器 */
+    h1>em {
+        /* color: seagreen; */
+    }
+    /* h1得兄弟p得控制，针对他下面得 */
+    h1+p {
+        color: rgb(139, 46, 92);
+    }
+
+    .one .three {
+        color: rgb(0, 132, 255);
+    }
+  </style>
+</head>
+
+<body>
+
+
+    <div class="one">
+        <div class="three">
+            abc
+        </div>
+    </div>
+
+    <div id="content"> abc</div>
+    
+    <p>嘻嘻嘻</p>
+    <div class="one">
+        哦豁
+    </div>
+    <!--有矛盾就近原则 没有矛盾就累加-->
+    <p class="one" style="color: cyan;">呜呜呜呜呜</p>
+
+    <div class="two"></div>
+
+    <ul>
+        <li><a href="#" id="bg_1">超链接1</a></li>
+        <li><a href="#">超链接2</a></li>
+        <li><a href="#" id="bg_2">超链接3</a></li>
+        <li><a href="#">超链接4</a></li>
+    </ul>
+
+    <div>
+        <h1>This is a <em>important</em> heading</h1>
+        <p>asdfghjkl <em>zxcvbnm</em> qwertyuiop</p>
+    </div>
+
+    
+
+</body>
+</html>
